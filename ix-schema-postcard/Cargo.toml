@@ -1,0 +1,19 @@
+[package]
+name = "ix-schema-postcard"
+description = "Postcard (compact binary) driver for ix: version-tagged encoding and type-safe migrate/upgrade-on-decode — a second backend proving the manifest orchestrates many formats."
+readme = "README.md"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+ix-schema = { path = "../ix-schema", version = "0.2.0" }
+serde = { version = "1", features = ["derive"] }
+postcard = { version = "1", features = ["use-std"] }
+
+[dev-dependencies]
+serde = { version = "1", features = ["derive"] }
