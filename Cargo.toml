@@ -1,0 +1,23 @@
+[workspace]
+resolver = "3"
+members = [
+    "ix-schema",
+    "ix-schema-derive",
+    "ix-schema-serde",
+    "ix-schema-zerocopy",
+    "ix-schema-postcard",
+    "ix-schema-toml",
+    "ix-schema-jsonschema",
+    "ix-schema-example",
+]
+
+# Shared package metadata, inherited by every crate via `field.workspace = true`.
+# Single source of truth for version and publish info.
+[workspace.package]
+version = "0.2.1"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/MerlijnW70/ix-schema"
+authors = ["intentos-dev"]
+keywords = ["serialization", "schema", "layout", "zerocopy", "no-std"]
+categories = ["encoding", "data-structures", "no-std"]

@@ -1,0 +1,15 @@
+[package]
+name = "ix-schema-jsonschema"
+description = "JSON Schema (Draft 2020-12) generator for ix-schema: turn any Ix type's compile-time manifest into a JSON Schema document, doc comments included."
+readme = "README.md"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+ix-schema = { path = "../ix-schema", version = "0.2.1" }
+serde_json = "1"

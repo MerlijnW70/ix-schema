@@ -1,0 +1,18 @@
+[package]
+name = "ix-schema-zerocopy"
+description = "Zerocopy driver for ix-schema: manifest-validated, zero-cost byte views over Ix types."
+readme = "README.md"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+ix-schema = { path = "../ix-schema", version = "0.2.1" }
+zerocopy = { version = "0.8", features = ["derive"] }
+
+[dev-dependencies]
+zerocopy = { version = "0.8", features = ["derive"] }
